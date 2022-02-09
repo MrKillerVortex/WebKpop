@@ -1,0 +1,48 @@
+/* Sélecteur
+Balise
+classe
+identifiant
+pseudo-classe
+pseudo-element
+*/
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #36303A;
+}
+
+.important{
+    font-variant: small-caps;
+    display: inline-block;
+    width: 100px;
+}
+
+#titre1 {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p:hover{
+    background-color: blue;
+}
+
+p::first-letter{
+    font-size: 1.5rem;
+}
+
+div {
+    background-color: #BBB;
+    width: 100%;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td,th,div {
+    border: 1px solid #000;
+}
+
+table tr td i {
+    color: chocolate;
+}

@@ -1,0 +1,13 @@
+#titre1{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    margin-left: 47%;
+}
+
+div{
+    background-color: dimgrey;
+    margin: 1/4;
+    padding: 10px ;
+    width: 25%;
+    display: inline-block;
+}
