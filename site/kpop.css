@@ -1,7 +1,7 @@
 body{
-    background-color: rgba(77, 65, 65, 0.836);
+    background-color: #90e0ef;
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: rgb(70, 67, 67);
     margin: 0px;
 }
 
@@ -9,7 +9,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 430%;
     padding-right: 50px;
-    background-color: orange;
+    background-color: #00b4d8;
     text-align:right;
     padding: 18px;
     margin-bottom: auto;
@@ -21,15 +21,15 @@ body{
     margin-top: 20px;
     width: 16%;
     height: 70%;
-    background-color: rgba(255, 166, 0, 0.842);
+    background-color: #00b4d8;
     padding-top: 15px;
-    line-height: 85%;
+    line-height: 150%;
     font-size: 120%;
     float : left;
 }
 
 #ListeExterne li:hover{
-    background-color: rgb(255, 136, 0);
+    background-color: rgb(41, 121, 153);
     width: 80%;
 }
 
@@ -41,16 +41,92 @@ body{
 }
 
 #Main{
-    background-color: rgba(245, 187, 27, 0.5);
-    width: 60%;
-    margin-left: 4%;
+    background-color: #68daee;
+    width: 80%;
+    margin-right: 25px;
+    margin-top: 20px;
     text-align: center;
-    display: inline-block;
+    float: right;
+}
+
+#MainBienvenue{
+    background-color: #68daee;
+    width: 80%;
+    margin-right: 25px;
+    margin-top: 20px;
+    text-align: center;
+    float: right;
+}
+
+#MainAjout{
+    background-color: #68daee;
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 20px;
+    text-align: center;
+    float: left;
 }
 
 #recherche{
-    margin-left: -100px;
-    width: 39%;
+    margin-left: 10px;
+    width: 93%;
+}
+
+#BeauJimin{
+    width: 290;
+    height: 220;
+    margin-top: 20px;
+}
+
+#Bienvenue{
+    width: 420;
+    height: 240;
+}
+
+
+/* Formulaire css*/
+
+/* Mise en forme spécifique au formulaire */
+#Titre3{
+    font-size: 250%;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20%;
+}
+
+label {
+    width: 150px;
+    line-height: 150%;
+    font-size: 120%;
+    margin-right: 50%;
+}
+form ul {
+    list-style: none;
+    margin-left: 15%;
+    line-height: 150%;
+    font-size: 120%;
+    float: left;
+}
+
+.boutonConnecter{
+    margin-right: 61%;
+    float: right;
+}
+
+.boutonInscrire{
+    margin-left: 17%;
+    margin-top: 10px;
+    margin-bottom: 8%;
     display: inline-block;
-    /* METTRE LA DIV DANS LA DIV LISTE*/
+}
+
+.boutonCréation{
+    margin-right: 62.2%;
+    float: right;
+}
+
+.boutonArtiste{
+    margin-left: -30%;
+    margin-top: 100px;
+    padding: 20px;
+    float: none;
 }
