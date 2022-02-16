@@ -28,9 +28,9 @@
             <h2>Ajout d'un artiste de K-Pop</h2>
                 <form method="get" action="ajoutartiste.html">
                     <ul>
-                        <li><label for="nom">Nom</label><input type="input" id="adresse" name="adresse" size="40" placeholder="Le nom de l'artiste"></li>
-                        <li><label for="groupe">Groupe</label><input type="text" id="ville" name="ville" size="40" placeholder="Le groupe dans le/laquelle joue l'artiste"></li>
-                        <li><label for="ville-origine">Ville</label><input type="text" id="permis" name="permis" size="40" placeholder="La ville d'origine de l'artiste"></li>
+                        <li><label for="nom">Nom</label><input type="input" id="nom" name="nom" size="40" placeholder="Le nom de l'artiste"></li>
+                        <li><label for="groupe">Groupe</label><input type="text" id="groupe" name="groupe" size="40" placeholder="Le groupe dans le/laquelle joue l'artiste"></li>
+                        <li><label for="ville-origine">Ville</label><input type="text" id="ville-origine" name="ville-origine" size="40" placeholder="La ville d'origine de l'artiste"></li>
                         <li><label for="date-naissance">Date naissance</label><input type="date" id="date" name="date" size="40" placeholder="La date de naissance de l'artiste"></li>
                         
                     </ul>
