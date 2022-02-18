@@ -19,7 +19,7 @@
             <ol style="list-style:none;"> 
                 <li><a href="index.html"> Accueil </a><br/><br/></li>
                 <li><a href="connection.html"> Connexion au compte </a><br/><br/></li>
-                <li><a href="index.php"> Ajout d'un artiste  </a><br/><br/></li>
+                <li><a href="ajouterartiste.php"> Ajout d'un artiste  </a><br/><br/></li>
                 <li><a href="reference.html"> Les références du code  </a><br/><br/></li>
             </ol>
         </div>
