@@ -1,0 +1,27 @@
++===================================+
+| New Account Info                  |
++===================================+
+| Domain: fortin.techinfo420.ca
+| Ip: 206.167.165.87 (n)
+| HasCgi: y
+| UserName: fortintechinfo42
+| PassWord: bzx#&FxFpbC7$ze8
+| CpanelMod: paper_lantern
+| HomeRoot: /home
+| Quota: 16 GB
+| NameServer1: dns1.techinfo420.ca
+| NameServer2: dns2.techinfo420.ca
+| NameServer3: 
+| NameServer4: 
+| Contact Email: 2035287@cegepat.qc.ca
+| Package: packboy
+| Feature List: default
+| Account Enhancements: None
+| Language: en
++===================================+
+
+CAPANEL : https://cpanel.techinfo420.ca/
+
+POUR FTP : sftp (techinfo420.ca)
+            Connexion sftp FileZila :   User = *Cpanel*
+                                        MDP = *Cpanel*
