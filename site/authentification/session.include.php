@@ -1,5 +1,5 @@
 <?php
-    ini_set("session.cookie_lifetime", 20);
+    ini_set("session.cookie_lifetime", 1800);
     ini_set("session.use_cookies", 1);
     ini_set("session.use_only_cookies" , 1);
     ini_set("session.use_strict_mode", 1);
@@ -13,7 +13,7 @@
     ini_set("session.sid_bits_per_character" , 6);
     ini_set("session.hash_function" , "sha256");
 
-    ini_set("session.gc_maxlifetime", DUREE_SESSION);
+    ini_set("session.gc_maxlifetime", 1800);
     ini_set("session.gc_probability",90);
     ini_set("session.gc_divisor",100);
 

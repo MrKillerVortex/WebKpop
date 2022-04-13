@@ -1,7 +1,6 @@
 <?php
-    session_start();
 
-    $username = "";
+    $username = "shawn";
     $password = password_hash("unmotdepasse", PASSWORD_DEFAULT);
     $donneesAuthetificationOk = true;
 
@@ -20,9 +19,11 @@
     }
 
     if ($donneesAuthetificationOk == true) {
-        header("Location: ../index.php"); //tout est ok continuer
+        include_once 'session.include.php';
+        creationAuthentif();
+        header("Location: ../connexioneffectue.html"); //Continue
     }
     else {
-        header("Location: ../connection.php"); //Problème recommencer
+        header("Location: ../connection.php"); //Recommencer
     }
 ?>

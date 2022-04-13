@@ -1,3 +1,11 @@
+<?php
+    include_once 'authentification/session.include.php';
+
+    if (!validationAuthetif()) {
+        header("Location: ../connection.php");
+    }
+?>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,7 +20,7 @@
 
         <div id="ListeExterne">
             <div id="recherche">
-                <form method="get" action="index.php">
+                <form method="get" action="rechercheartiste.php">
                     <input type="search" id="recherche" name="recherche" size="40" placeholder="Rechercher l'artiste ou le groupe">
                 </form>
             </div>

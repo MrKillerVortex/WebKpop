@@ -1,3 +1,7 @@
+<?php
+    include_once 'authentification/include.erreursF.php';
+?>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -26,14 +30,21 @@
 
         <div id="FormConnexion">
             <h2 id="Titre3">Connexion au compte de WikiPop</h2>
-            <form method="get" action="connexioneffectue.html">
+            <form method="post" action="authentification/redirect.securite.php" name="donneesFonction" id="donneesFonction">
+                
                 <ul>
-                    <li><label for="non">Nom d'utilisateur</label><input type="input" id="nom" name="nom" size="40" placeholder="Nom"></li>
+                    <li><label for="user">Nom d'utilisateur</label><input type="input" id="user" name="user" size="40" placeholder="Utilisateur"></li>
                     <li><label for="mdp">Mot de passe</label><input type="password" id="mdp" name="mdp" size="40" placeholder="Mot de passe"></li>
                 </ul>
-                <input class="boutonConnecter" type="submit" formaction="connexioneffectue.html" value=" Me connecter ">
+                
+                <input class="boutonConnecter" type="submit" onclick="formDonnees.submit()" value=" Me connecter ">
            
-                <input class="boutonInscrire" type="submit" formaction="inscription.html" value=" M'inscrire ">
+                <input class="boutonInscrire" type="submit" href="inscription.html" value=" M'inscrire ">
+                <?php
+                    if ( (isset($erreurs["user"]) && $erreurs["user"]===0) || (isset($erreurs["mdp"]) && $erreurs["mdp"]===0) ) 
+                            echo "<span>La combinaison nom d'usager/mot de passe n'est pas valide.</span>";
+                ?>
+                
             </form>
         </div>
 
