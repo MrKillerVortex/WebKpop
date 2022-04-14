@@ -5,24 +5,9 @@
         <link href="kpop.css" rel="stylesheet">
     </head>
     <body>
-        <div>
-            <h1 id="titre1"> WikiPop </h1>
-            <img id="BeauSuga" src="SUGA1-1.jpg">
-        </div>
-
-        <div id="ListeExterne">
-            <div id="recherche">
-                <form method="get" action="rechercheartiste.php">
-                    <input type="search" id="recherche" name="recherche" size="40" placeholder="Rechercher l'artiste ou le groupe">
-                </form>
-            </div>
-            <ol style="list-style:none;"> 
-                <li><a href="index.html"> Accueil </a><br/><br/></li>
-                <li><a href="connection.php"> Connexion au compte </a><br/><br/></li>
-                <li><a href="ajouterartiste.php"> Ajout d'un artiste  </a><br/><br/></li>
-                <li><a href="reference.html"> Les références du code  </a><br/><br/></li>
-            </ol>
-        </div>
+        <?php
+            include_once ('ajoutduhtmlsurlespages.html');
+        ?>
 
         <h2 id="TitreRecherche">Artiste venant de la liste de recherche</h2>
             <table id="Table1">
