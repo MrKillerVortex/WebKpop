@@ -19,7 +19,8 @@
 
         <div id="MainAjout">
             <h2>Ajout d'un artiste de K-Pop</h2>
-                <form method="get" action="ajoutartiste.html">
+                <form method="get" action="ajoutartiste.php">
+                <input type="hidden" name="token" value="<?php echo $_SESSION['token'] ?? '' ?>">
                     <ul>
                         <li><label for="nom">Nom</label><input type="input" id="nom" name="nom" size="40" placeholder="Le nom de l'artiste"></li>
                         <li><label for="groupe">Groupe</label><input type="text" id="groupe" name="groupe" size="40" placeholder="Le groupe dans le/laquelle joue l'artiste"></li>

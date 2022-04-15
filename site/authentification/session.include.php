@@ -43,6 +43,8 @@
         session_start();
         $_SESSION['expiration']=time();
         $_SESSION['valide']="valide";
+        //ajoute le token pour le CSRF
+        $_SESSION['token'] = md5(uniqid(mt_rand(), true));
     }
 
     function supprimerSession()

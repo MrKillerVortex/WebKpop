@@ -16,7 +16,7 @@
         <div id="FormConnexion">
             <h2 id="Titre3">Connexion au compte de WikiPop</h2>
             <form method="post" action="authentification/redirect.securite.php" name="donneesFonction" id="donneesFonction">
-                
+            <input type="hidden" name="token2" value="<?php echo $_SESSION['token2'] ?? '' ?>">
                 <ul>
                     <li><label for="user">Nom d'utilisateur</label><input type="input" id="user" name="user" size="40" placeholder="Utilisateur"></li>
                     <li><label for="mdp">Mot de passe</label><input type="password" id="mdp" name="mdp" size="40" placeholder="Mot de passe"></li>
@@ -24,7 +24,7 @@
                 
                 <input class="boutonConnecter" type="submit" onclick="formDonnees.submit()" value=" Me connecter ">
            
-                <input class="boutonInscrire" type="submit" href="inscription.html" value=" M'inscrire ">
+                <input class="boutonInscrire" type="submit" href="inscription.php" value=" M'inscrire ">
                 <?php
                     if ( (isset($erreurs["user"]) && $erreurs["user"]===0) || (isset($erreurs["mdp"]) && $erreurs["mdp"]===0) ) 
                             echo "<span>La combinaison nom d'usager/mot de passe n'est pas valide.</span>";

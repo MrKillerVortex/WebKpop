@@ -11,13 +11,14 @@
 
         <div id="FormConnexion">
             <h2 id="Titre3">Connexion au compte de WikiPop</h2>
-            <form method="get" action="connexioneffectue.html">
+            <form method="get" action="connexioneffectue.php">
+            <input type="hidden" name="token3" value="<?php echo $_SESSION['token3'] ?? '' ?>">
                 <ul>
                     <li><label for="non">Nom d'utilisateur</label><input type="input" id="nom" name="nom" size="40" placeholder="Nom"></li>
                     <li><label for="mdp">Mot de passe</label><input type="password" id="mdp" name="mdp" size="40" placeholder="Mot de passe"></li>
                     <li><label for="mdp2">Resaisir</label><input type="password" id="mdp2" name="mdp2" size="40" placeholder="Entrez votre mot de passe à nouveau"></li>
                 </ul>
-                <input class="boutonCréation" type="submit" formaction="inscriptioneffectue.html" value=" M'inscrire ">
+                <input class="boutonCréation" type="submit" formaction="inscriptioneffectue.php" value=" M'inscrire ">
             </form>
         </div>
 

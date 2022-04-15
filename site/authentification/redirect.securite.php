@@ -21,7 +21,7 @@
     if ($donneesAuthetificationOk == true) {
         include_once 'session.include.php';
         creationAuthentif();
-        header("Location: ../connexioneffectue.html"); //Continue
+        header("Location: ../connexioneffectue.php"); //Continue
     }
     else {
         header("Location: ../connection.php"); //Recommencer
