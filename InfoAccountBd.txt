@@ -25,3 +25,6 @@ CAPANEL : https://cpanel.techinfo420.ca/
 POUR FTP : sftp (techinfo420.ca)
             Connexion sftp FileZila :   User = *Cpanel*
                                         MDP = *Cpanel*
+
+Pour accéder à partir de WebKpop cpanel :
+            https://fortin.techinfo420.ca/WebKpop/site/index.php

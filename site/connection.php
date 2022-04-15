@@ -24,12 +24,11 @@
                 
                 <input class="boutonConnecter" type="submit" onclick="formDonnees.submit()" value=" Me connecter ">
            
-                <input class="boutonInscrire" type="submit" href="inscription.php" value=" M'inscrire ">
+                <a class="boutonInscrire" href="inscription.php" class="btn btn-primary">M'inscrire</a>
                 <?php
                     if ( (isset($erreurs["user"]) && $erreurs["user"]===0) || (isset($erreurs["mdp"]) && $erreurs["mdp"]===0) ) 
                             echo "<span>La combinaison nom d'usager/mot de passe n'est pas valide.</span>";
                 ?>
-                
             </form>
         </div>
 
