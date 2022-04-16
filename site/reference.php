@@ -19,6 +19,22 @@
                 <li><a href="https://www.w3schools.com/html/html_tables.asp"> Faire une table </a><br/><br/></li>
                 <li><a href="https://www.php.net/manual/fr/control-structures.for.php"> Faire une boucle for en php dans une table </a><br/><br/></li>
                 <li><a href="https://www.php.net/manual/fr/session.security.ini.php"> Faire les initialisations et les paramètres de la session </a><br/><br/></li>
+                <li><a>Package d’hébergement : 	packboy</a></li>
+                <li><a>Nom du serveur : 	projetweb</a></li>
+                <li><a>Version de cPanel : 	102.0 (build 11)</a></li>
+                <li><a>Version Apache : 	2.4.53</a></li>
+                <li><a>Version de PHP : 	7.3.33</a></li>
+                <li><a>Version de MySQL : 	5.7.37</a></li>
+                <li><a>Architecture : 	x86_64</a></li>
+                <li><a>Système d’exploitation :     linux</a></li>
+                <li><a>Adresse IP partagée : 	206.167.165.87</a></li>
+                <li><a>Adresse IP locale : 	10.201.1.87</a></li>
+                <li><a>Chemin vers Sendmail : 	/usr/sbin/sendmail</a></li>
+                <li><a>Chemin vers Perl : 	/usr/bin/perl</a></li>
+                <li><a>Version de Perl : 	5.16.3</a></li>
+                <li><a>Version du noyau : 	3.10.0-1160.59.1.el7.x86_64</a></li>
+                <li><a>Version HTML : 	5</a></li>
+                <li><a>Version CSS : 	3</a></li>
             </ol>
         </div>
 

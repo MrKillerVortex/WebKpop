@@ -18,15 +18,15 @@
             <form method="post" action="authentification/redirect.securite.php" name="donneesFonction" id="donneesFonction">
             <input type="hidden" name="token2" value="<?php echo $_SESSION['token2'] ?? '' ?>">
                 <ul>
-                    <li><label for="user">Nom d'utilisateur</label><input type="input" id="user" name="user" size="40" placeholder="Utilisateur"></li>
-                    <li><label for="mdp">Mot de passe</label><input type="password" id="mdp" name="mdp" size="40" placeholder="Mot de passe"></li>
+                    <li><label for="username">Nom d'utilisateur</label><input type="input" id="username" name="username" size="40" placeholder="Utilisateur"></li>
+                    <li><label for="password">Mot de passe</label><input type="password" id="password" name="password" size="40" placeholder="Mot de passe"></li>
                 </ul>
                 
                 <input class="boutonConnecter" type="submit" onclick="formDonnees.submit()" value=" Me connecter ">
            
                 <a class="boutonInscrire" href="inscription.php" class="btn btn-primary">M'inscrire</a>
                 <?php
-                    if ( (isset($erreurs["user"]) && $erreurs["user"]===0) || (isset($erreurs["mdp"]) && $erreurs["mdp"]===0) ) 
+                    if ( (isset($erreurs["username"]) && $erreurs["username"]===0) || (isset($erreurs["password"]) && $erreurs["password"]===0) ) 
                             echo "<span>La combinaison nom d'usager/mot de passe n'est pas valide.</span>";
                 ?>
             </form>
