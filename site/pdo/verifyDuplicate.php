@@ -24,10 +24,10 @@
                         VALUES ('$username', '" . hash('sha256', $password) . "')";
         $result   = mysqli_query($link, $query);
         if ($result) {
-            header('Location: inscriptioneffectue.php');
+            header('Location: ../site/inscriptioneffectue.php');
             exit();
         } else {
-            header('Location: inscription.php');
+            header('Location: ../site/inscription.php');
             exit();
         }
     } else {

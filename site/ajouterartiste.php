@@ -7,14 +7,12 @@
 ?>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Un Wiki de certains artistes de K-POP</title>
-        <link href="kpop.css" rel="stylesheet">
-    </head>
+    <?php
+        include_once('ajoutdesheaders.php');
+    ?>
     <body>
         <?php
-            include_once ('ajoutduhtmlsurlespages.html');
+            include_once ('ajoutduhtmlsurlespages.php');
         ?>
 
         <div id="MainAjout">

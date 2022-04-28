@@ -1,12 +1,10 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Une page avec les références</title>
-        <link href="kpop.css" rel="stylesheet">
-    </head>
+    <?php
+        include_once('ajoutdesheaders.php');
+    ?>
     <body>
         <?php
-            include_once ('ajoutduhtmlsurlespages.html');
+            include_once ('ajoutduhtmlsurlespages.php');
         ?>
 
         <div id="Main">

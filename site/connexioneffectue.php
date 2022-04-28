@@ -1,12 +1,10 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Une page qui confirme la connexion sur le site</title>
-        <link href="kpop.css" rel="stylesheet">
-    </head>
+    <?php
+        include_once('ajoutdesheaders.php');
+    ?>
     <body>
         <?php
-            include_once ('ajoutduhtmlsurlespages.html');
+            include_once ('ajoutduhtmlsurlespages.php');
         ?>
 
         <div id="MainBienvenue">
