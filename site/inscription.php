@@ -15,7 +15,7 @@
                     <li><label for="username">Nom d'utilisateur</label><input type="text" id="username" name="username" size="40" placeholder="Nom"></li>
                     <li><label for="password">Mot de passe</label><input type="password" id="password" name="password" size="40" placeholder="Mot de passe"></li>
                 </ul>
-                <input class="boutonCréation" type="submit" formaction="verifyDuplicate.php" value=" M'inscrire ">
+                <input class="boutonCréation" type="submit" formaction="../pdo/verifyDuplicate.php" value=" M'inscrire ">
             </form>
             
         </div>
