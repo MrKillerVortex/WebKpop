@@ -27,8 +27,8 @@
 
 <div class="dashboard">
     <?php
-        if (isset($_SESSION['kpop'])) {
-            echo "<p>Bonjour, $_SESSION[username]!</p>";
+        if ($_SESSION['valide']=="valide") {
+            echo "<p>Bonjour, ".$_SESSION['username']."!</p>";
             echo "<p><a href='../authentification/deconnection.php'> Se déconnecter</a></p>";
         }
     ?>  
