@@ -55,4 +55,8 @@
         $_SESSION = array();
         session_commit();
     }
+
+    /*
+    HASH_MAC CSRF
+    */
 ?>

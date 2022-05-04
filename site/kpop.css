@@ -155,3 +155,19 @@ form ul {
     padding: 20px;
     float: none;
 }
+
+#Recherche{
+    margin-left: 15%;
+    margin-top: 0.5%;
+    width: 75%;
+    height: 18%;
+}
+
+#listeArtiste{
+    width: 70%;
+    height: 50%;
+    padding: 5px 0;
+    margin-right: 100px;
+    float: right;
+    text-align: center;
+}

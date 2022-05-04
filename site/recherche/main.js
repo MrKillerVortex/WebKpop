@@ -1,22 +1,32 @@
-async function rechercherLeNom(valeur){
 
-    for (let index = 0; index < 10; index++) {
-        try{
-            let d = await rechercheArtiste(valeur,index)
 
-            let divMain = document.getElementById("main")
+async function rechercherLeNom(nom){
+    let divMain = document.getElementById("listeArtiste")
+    divMain.innerHTML = ""
+    let jsonArtiste = await fetch("./getArtistes.php")
+    listeArtiste = await jsonArtiste.json()
+
+    try{
+        let d = await rechercheArtiste(listeArtiste,nom)
+        if (typeof d === "string") {
             let resultat = document.createElement('p')
             resultat.innerText = d
             divMain.appendChild(resultat)
-        } catch(erreur){
-            console.log(erreur)
-            
+            return
         }
+        for (const artiste of a) {
+            let resultat = document.createElement('p')
+            resultat.innerText = artiste
+            divMain.appendChild(resultat)
+        }
+    } catch(erreur){
+        console.log(erreur)
         
     }
+
 }
 
-async function rechercheArtiste(valeur,index){
-    let resultat = await new Recherche().trouverArtiste(valeur)
-    return `${index} : ${resultat}`
+async function rechercheArtiste(valeur,nom){
+    let resultat = await new Recherche().trouverArtiste(valeur, nom)
+    return resultat
 }
