@@ -7,7 +7,8 @@
 <div id="ListeExterne">
     <div id="recherche">
         <form method="get" action="rechercheartiste.php">
-            <input type="search" id="recherche" name="recherche" size="40" placeholder="Rechercher l'artiste ou le groupe">
+            <input type="input" id="recherche" name="recherche" size="40" placeholder="Rechercher l'artiste ou le groupe">
+            <input onclick="rechercherLeNom(recherche.value)" type="button" class="floatRight" value="&#x1F50D;">
         </form>
     </div>
     <ol style="list-style:none;">
