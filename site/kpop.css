@@ -79,11 +79,6 @@ body{
     float: right;
 }
 
-#recherche{
-    margin-left: 10px;
-    width: 93%;
-}
-
 #BeauJimin{
     width: 290;
     height: 220;
@@ -157,17 +152,20 @@ form ul {
 }
 
 #Recherche{
-    margin-left: 15%;
-    margin-top: 0.5%;
-    width: 75%;
-    height: 18%;
+    margin-left: 16%;
+    margin-top: 1%;
+    width: 55%;
+    height: 4%;
 }
 
 #listeArtiste{
-    width: 70%;
-    height: 50%;
+    background-color: #53c0d6;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: 120%;
+    width: 55%;
+    height: auto;
     padding: 5px 0;
-    margin-right: 100px;
+    margin-right: 12.5%;
     float: right;
     text-align: center;
 }

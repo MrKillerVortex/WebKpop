@@ -7,14 +7,14 @@
             include_once ('ajoutduhtmlsurlespages.php');
         ?>
 
-        <div id="Recherche">
+        <div>
             <form method="get">
-                <input type="search" id="recherche" name="recherche" size="40" placeholder="Rechercher l'artiste ou le groupe" onkeyup="rechercherLeNom(recherche.value)">
+                <input type="search" id="Recherche" name="recherche" size="40" placeholder="Rechercher l'artiste ou le groupe" onkeyup="rechercherLeNom(recherche.value)">
             </form>
         </div>
 
         <div id=listeArtiste>
-            
+
         </div>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
