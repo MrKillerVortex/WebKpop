@@ -8,7 +8,10 @@ class Recherche{
                 result.push(artiste)
             }
         }
-        if (result.length === 0) return "Aucun artiste correspondant"
+        if (result.length === 0) 
+        {
+            return "Aucun artiste correspondant"
+        }
         return result
     }
 }

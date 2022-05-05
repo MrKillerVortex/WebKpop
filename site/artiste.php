@@ -9,6 +9,7 @@
 
         <div>
             <form method="get">
+            <input type="hidden" name="token4" value="<?php echo $_SESSION['token4'] ?? '' ?>">
                 <input type="search" id="Recherche" name="recherche" size="40" placeholder="Rechercher l'artiste ou le groupe" onkeyup="rechercherLeNom(recherche.value)">
             </form>
         </div>

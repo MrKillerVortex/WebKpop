@@ -6,14 +6,14 @@ async function rechercherLeNom(nom){
     let jsonArtiste = await fetch("./getArtistes.php")
     listeArtiste = await jsonArtiste.json()
     try{
-        let d = await rechercheArtiste(listeArtiste,nom)
-        if (typeof d === "string") {
+        let a = await rechercheArtiste(listeArtiste,nom)
+        if (typeof a === "string") {
             let resultat = document.createElement('p')
-            resultat.innerText = d
+            resultat.innerText = a
             divMain.appendChild(resultat)
             return
         }
-        for (const artiste of d) {
+        for (const artiste of a) {
             let resultat = document.createElement('p')
             resultat.innerText = artiste
             divMain.appendChild(resultat)
