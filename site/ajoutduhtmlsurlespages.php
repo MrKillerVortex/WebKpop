@@ -1,24 +1,24 @@
 
 <div>
     <h1 id="titre1"> WikiPop </h1>
+    <script src="recherche/Recherche.js"></script>
+    <script src="recherche/main.js"></script>
     <img id="BeauSuga" src="SUGA1-1.jpg">
 </div>
 
 <div id="ListeExterne">
-    
-    <ol style="list-style:none;">
     <?php
-    if (isset($_SESSION['kpop'])){
-        echo "<li><a href='index.php'> Accueil </a><br/><br/></li>";
-        echo "<li><a href='ajouterartiste.php'> Ajout d'un artiste  </a><br/><br/></li>";
-        echo "<li><a href='reference.php'> Les références du code  </a><br/><br/></li>";
-    }
-    else{
-        echo "<li><a href='index.php'> Accueil </a><br/><br/></li>";
-        echo "<li><a href='connection.php'> Connexion au compte </a><br/><br/></li>";
-        echo "<li><a href='artiste.php'> Rechercher un artiste </a><br/><br/></li>";
-    }
+        include_once "authentification/session.include.php";
+        if (validationAuthetif()) {
+            echo '<a href="authentification/deconnection.php"> <b>Déconnexion</b> </a>';
+        }
     ?>
+    <ol style="list-style:none;">
+        <li><a href='index.php'> Accueil </a><br/><br/></li>
+        <li><a href='connection.php'> Connexion au compte </a><br/><br/></li>
+        <li><a href='artiste.php'> Rechercher un artiste </a><br/><br/></li>
+        <li><a href='ajouterartiste.php'> Ajout d'un artiste  </a><br/><br/></li>
+        <li><a href='reference.php'> Les références du code  </a><br/><br/></li>
     </ol>
 </div>
 

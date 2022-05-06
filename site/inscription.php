@@ -1,7 +1,9 @@
 <html>
-    <?php
-        include_once('ajoutdesheaders.php');
-    ?>
+    <head>
+        <meta charset="utf-8">
+        <title>Un Wiki de certains artistes de K-POP</title>
+        <link href="kpop.css" rel="stylesheet">
+    </head>
     <body>
         <?php
             include_once ('ajoutduhtmlsurlespages.php');
@@ -15,7 +17,7 @@
                     <li><label for="username">Nom d'utilisateur</label><input type="text" id="username" name="username" size="40" placeholder="Nom"></li>
                     <li><label for="password">Mot de passe</label><input type="password" id="password" name="password" size="40" placeholder="Mot de passe"></li>
                 </ul>
-                <input class="boutonCréation" type="submit" formaction="../pdo/verifyDuplicate.php" value=" M'inscrire ">
+                <input class="boutonCréation" type="submit" formaction="../site/pdo/verifyDuplicate.php" value=" M'inscrire ">
             </form>
             
         </div>

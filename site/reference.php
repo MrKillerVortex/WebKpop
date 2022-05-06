@@ -1,7 +1,16 @@
+<?php
+    include_once 'authentification/session.include.php';
+
+    if (!validationAuthetif()) {
+        header("Location: ../connection.php");
+    }
+?>
 <html>
-    <?php
-        include_once('ajoutdesheaders.php');
-    ?>
+    <head>
+        <meta charset="utf-8">
+        <title>Un Wiki de certains artistes de K-POP</title>
+        <link href="kpop.css" rel="stylesheet">
+    </head>
     <body>
         <?php
             include_once ('ajoutduhtmlsurlespages.php');

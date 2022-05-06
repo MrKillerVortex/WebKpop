@@ -1,5 +1,5 @@
 <?php
-    require('pdo/config.pdo.php');
+    require('config.pdo.php');
 
 
     // Check the database for duplicate username
@@ -24,10 +24,10 @@
                         VALUES ('$username', '" . hash('sha256', $password) . "')";
         $result   = mysqli_query($link, $query);
         if ($result) {
-            header('Location: ../site/inscriptioneffectue.php');
+            header('Location: ../inscriptioneffectue.php');
             exit();
         } else {
-            header('Location: ../site/inscription.php');
+            header('Location: ../inscription.php');
             exit();
         }
     } else {
