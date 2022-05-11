@@ -1,4 +1,5 @@
 <?php
+    include_once 'authentification/setsession.php';
     include_once 'authentification/session.include.php';
 
     if (!validationAuthetif()) {

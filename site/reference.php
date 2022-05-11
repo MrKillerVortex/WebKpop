@@ -1,8 +1,9 @@
 <?php
+    include_once 'authentification/setsession.php';
     include_once 'authentification/session.include.php';
 
     if (!validationAuthetif()) {
-        header("Location: ../connection.php");
+        header("Location: ../site/connection.php");
     }
 ?>
 <html>

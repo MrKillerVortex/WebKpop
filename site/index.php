@@ -1,3 +1,6 @@
+<?php
+include_once 'authentification/setsession.php';
+?>
 <html>
     <head>
         <meta charset="utf-8">

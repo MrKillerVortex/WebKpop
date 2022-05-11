@@ -19,6 +19,8 @@
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
+            error_log('peepeepoopoo');
+            include_once 'setsession.php';
             creationAuthentif();
             $log = "Username: ".$username." - ".date("F j, Y, g:i a")." - Attempt: AUTHENTIFICATION EFFECTUÉ\n";
             file_put_contents('./log_auth.log', $log, FILE_APPEND);

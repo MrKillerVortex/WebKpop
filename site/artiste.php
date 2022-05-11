@@ -1,3 +1,11 @@
+<?php
+    include_once 'authentification/setsession.php';
+    include_once 'authentification/session.include.php';
+
+    if (!validationAuthetif()) {
+        header("Location: ../site/connection.php");
+    }
+?>
 <html>
     <head>
         <meta charset="utf-8">
