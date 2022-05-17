@@ -1,5 +1,5 @@
 <?php
-include_once('authentification/setsession.php');
+include_once('setsession.php');
 $_SESSION = [];
 session_unset();
 session_destroy();
