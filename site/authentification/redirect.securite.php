@@ -4,7 +4,7 @@
     $donneesAuthetificationOk = true;
 
 
-    if ($stmt = $link->prepare('SELECT idutilisateur, password FROM utilisateur WHERE username = ?')) {
+    if ($stmt = $link->prepare('CALL ObtenirUtilisateur(?)')) {
 
 	$stmt->bind_param('s', $_POST['username']);
 	$stmt->execute();
@@ -16,10 +16,11 @@
         $stmt->fetch();
 
         if (hash('sha256', $_POST['password']) == $password) {
+            //Correct connection
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['name'] = $_POST['username'];
             $_SESSION['id'] = $id;
-            error_log('peepeepoopoo');
+            error_log('Connecté');
             include_once 'setsession.php';
             creationAuthentif();
             $log = "Username: ".$username." - ".date("F j, Y, g:i a")." - Attempt: AUTHENTIFICATION EFFECTUÉ\n";
@@ -27,21 +28,21 @@
             header("Location: ../connexioneffectue.php");
         } else {
             // Incorrect password
-            echo 'Incorrect username and/or password!'.$password.' '.hash('sha256', $_POST['password']);
+            error_log('Mot de passe invalide');
             setcookie('mdp',"0", time()+30,"/");
             $donneesAuthetificationOk = false;
             $log = "Username: ".$username." - ".date("F j, Y, g:i a")." - Attempt: MOT DE PASSE INCORRECT/OU UTILISATEUR\n";
             file_put_contents('./log_auth.log', $log, FILE_APPEND);
-            header("Location: ../connection.php");
+            header("Location: ../connection.php?erreur=1");
         }
     } else {
         // Incorrect username
-        echo 'Incorrect username and/or password!';
+        error_log('Utilisateur invalide');
         setcookie('user',"0", time()+30,"/");
         $donneesAuthetificationOk = false;
         $log = "Username: ".$username." - ".date("F j, Y, g:i a")." - Attempt: MOT DE PASSE INCORRECT/OU UTILISATEUR\n";
         file_put_contents('./log_auth.log', $log, FILE_APPEND);
-        header("Location: ../connection.php");
+        header("Location: ../connection.php?erreur=1");
     }
 
 	$stmt->close();

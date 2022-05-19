@@ -132,13 +132,6 @@ form ul {
     float: right;
 }
 
-.boutonInscrire{
-    margin-left: 17%;
-    margin-top: 10px;
-    margin-bottom: 8%;
-    display: inline-block;
-}
-
 .boutonCréation{
     margin-right: 62.2%;
     float: right;
@@ -168,4 +161,16 @@ form ul {
     margin-right: 12.5%;
     float: right;
     text-align: center;
+}
+
+#inscriptionBouton{
+    margin-right: 63%;
+    margin-top: 0.5%;
+    float: right;
+}
+
+#messageErreur{
+    background-color: #53c0d6;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: 106%;
 }

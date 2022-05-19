@@ -24,10 +24,12 @@
                 
                 <input class="boutonConnecter" type="submit" onclick="formDonnees.submit()" value=" Me connecter ">
            
-                <a class="boutonInscrire" href="inscription.php" class="btn btn-primary">M'inscrire</a>
+                <a id="inscriptionBouton" href="inscription.php" class="btn btn-primary">M'inscrire</a>
                 <?php
-                    if ( (isset($erreurs["username"]) && $erreurs["username"]===0) || (isset($erreurs["password"]) && $erreurs["password"]===0) ) 
-                            echo "<span>La combinaison nom d'usager/mot de passe n'est pas valide.</span>";
+                    if (isset($_GET['erreur']) && $_GET['erreur'] == 1)
+                    {
+                            echo "<br></br><span id='messageErreur'>La combinaison nom d'usager/mot de passe n'est pas valide.</span>";
+                    }
                 ?>
             </form>
         </div>
