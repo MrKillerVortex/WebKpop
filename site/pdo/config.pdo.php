@@ -1,7 +1,7 @@
 <?php
 //Connexion à la BD
 
-define("DOCKER_UTILISATEUR","fortinte_admin");
+define("DOCKER_UTILISATEUR","fortintechinfo42_admin");
 define("DOCKER_MDP","Merlinismycat0192");
 define("DOCKER_HOST","mariadb");
 define("HOST","localhost");
